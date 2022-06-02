@@ -1,0 +1,21 @@
+$light-red: hsl(356, 100%, 66%);
+$very-light-red: hsl(355, 100%, 74%);
+$very-dark-blue: hsl(208, 49%, 24%);
+$white: hsl(0, 0%, 100%);
+$grayish-blue: hsl(240, 2%, 79%);
+$dark-gray-blue: hsl(207, 13%, 34%);
+$dark-black-blue: hsl(240, 10%, 16%);
+
+$bg-gradient-red: linear-gradient(
+  90deg,
+  hsl(13, 100%, 72%) 0%,
+  hsl(353, 100%, 62%) 100%
+);
+$bg-gradient-darkblue: linear-gradient(
+  90deg,
+  hsl(237, 17%, 21%) 0%,
+  hsl(237, 23%, 32%) 100%
+);
+
+$font-ubuntu: "Ubuntu", sans-serif;
+$font-overpass: "Overpass", sans-serif;
