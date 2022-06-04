@@ -1,0 +1,29 @@
+footer {
+  padding: 50px 200px;
+  background-color: $dark-black-blue;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 100px 0 0;
+
+  img {
+    width: 101px;
+    height: 40px;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-top: 20px;
+
+      &:nth-child(1) {
+        margin-top: 0;
+        margin-bottom: 40px;
+      }
+
+      a {
+        color: hsl(240, 2%, 79%);
+      }
+    }
+  }
+}
