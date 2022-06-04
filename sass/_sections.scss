@@ -6,21 +6,22 @@ section {
   p {
     color: hsl(207, 13%, 34%);
     margin-bottom: 50px;
+    line-height: 26px;
   }
 
   h2 {
-    font-size: 36px;
+    font-size: $font-size-medium;
   }
 
   h3 {
     color: $very-dark-blue;
-    font-size: 28px;
+    font-size: $font-size-small;
   }
 
   &:nth-child(1) {
     background-image: url(./../images/illustration-editor-desktop.svg);
     background-repeat: no-repeat;
-    background-position: 120% 50%;
+    background-position: 100vh center;
 
     h2 {
       color: $very-dark-blue;
@@ -54,10 +55,74 @@ section {
   &:nth-child(3) {
     background-image: url(./../images/illustration-laptop-desktop.svg);
     background-repeat: no-repeat;
-    background-position: -20% 50%;
+    background-position: -10vw 50%;
 
     div {
       grid-column: 2/3;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding: 300px 150px;
+
+    &:nth-child(2) {
+      padding: 0 150px;
+      background-image: url(./../images/bg-pattern-circles.svg),
+        $bg-gradient-darkblue;
+      background-position: center bottom;
+
+      img {
+        margin: 0;
+      }
+    }
+    &:nth-child(3) {
+      background-position: -40vw 50%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 150px 20px;
+    text-align: center;
+
+    &:nth-child(1) {
+      background-image: url(./../images/illustration-editor-mobile.svg);
+      background-position: center 200px;
+
+      h2 {
+        margin-top: -20px;
+        font-size: 32px;
+      }
+
+      div {
+        padding-top: 375px;
+        padding-bottom: 50px;
+      }
+    }
+
+    &:nth-child(2) {
+      padding: 0 20px 100px 20px;
+      background-image: url(./../images/bg-pattern-circles.svg),
+        $bg-gradient-darkblue;
+      background-position: center bottom;
+
+      img {
+        width: 80vw;
+        margin: -150px auto 10px auto;
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url(./../images/illustration-laptop-mobile.svg);
+      background-position: center 100px;
+
+      div {
+        padding-top: 375px;
+      }
     }
   }
 }

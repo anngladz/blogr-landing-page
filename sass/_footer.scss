@@ -11,6 +11,7 @@ footer {
   }
 
   ul {
+    padding: 0;
     list-style: none;
 
     li {
@@ -23,6 +24,33 @@ footer {
 
       a {
         color: hsl(240, 2%, 79%);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    padding: 50px 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  footer {
+    padding: 100px 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    ul:nth-of-type(1) {
+      padding-top: 100px;
+    }
+
+    ul {
+      li {
+        &:nth-child(1) {
+          margin-bottom: 30px;
+        }
       }
     }
   }

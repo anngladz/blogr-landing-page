@@ -5,6 +5,7 @@ $white: hsl(0, 0%, 100%);
 $grayish-blue: hsl(240, 2%, 79%);
 $dark-gray-blue: hsl(207, 13%, 34%);
 $dark-black-blue: hsl(240, 10%, 16%);
+$light-gray: #efeff1;
 
 $bg-gradient-red: linear-gradient(
   90deg,
@@ -17,5 +18,7 @@ $bg-gradient-darkblue: linear-gradient(
   hsl(237, 23%, 32%) 100%
 );
 
-$font-ubuntu: "Ubuntu", sans-serif;
-$font-overpass: "Overpass", sans-serif;
+$font: "Overpass", sans-serif;
+$font-size-big: 52px;
+$font-size-medium: 36px;
+$font-size-small: 24px;
