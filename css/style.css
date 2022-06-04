@@ -616,13 +616,6 @@ header button:nth-child(2):hover, header button:nth-child(3):hover {
   header nav .menu-mobile .menu-wrap ul li a {
     color: #1f3f5b;
   }
-  header nav .menu-mobile .menu-wrap ul li:hover ul {
-    display: block;
-  }
-  header nav .menu-mobile .menu-wrap ul li:hover span {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
   header nav .menu-mobile .menu-wrap ul li:hover a {
     color: #4b5862;
     text-decoration: none;
@@ -637,8 +630,14 @@ header button:nth-child(2):hover, header button:nth-child(3):hover {
   }
 }
 
-header nav .menu-mobile .menu-wrap.active {
+header nav .menu-mobile .menu-wrap.active,
+header nav .menu-mobile .menu-wrap ul li ul.active {
   display: block;
+}
+
+header nav .menu-mobile .menu-wrap ul li span.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 header nav .menu-mobile .hamburger.close {

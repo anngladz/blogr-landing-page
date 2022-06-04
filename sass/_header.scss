@@ -245,13 +245,9 @@ header {
               }
 
               &:hover {
-                ul {
-                  display: block;
-                }
-
-                span {
-                  transform: rotate(180deg);
-                }
+                // span {
+                //   transform: rotate(180deg);
+                // }
 
                 a {
                   color: $dark-gray-blue;
@@ -276,8 +272,13 @@ header {
   }
 }
 
-header nav .menu-mobile .menu-wrap.active {
+header nav .menu-mobile .menu-wrap.active,
+header nav .menu-mobile .menu-wrap ul li ul.active {
   display: block;
+}
+
+header nav .menu-mobile .menu-wrap ul li span.rotate {
+  transform: rotate(180deg);
 }
 
 header nav .menu-mobile .hamburger.close {
